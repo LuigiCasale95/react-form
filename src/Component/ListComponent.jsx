@@ -12,9 +12,28 @@ export default function ListComponent() {
         /* Array copia da stampare ad ogni aggiunta elemento*/
 
         const updateMangaList = [...manga, newManga];
+        setManga(updateMangaList)
+        setNewManga("")
     }
 
     return (
-        <h1>AAAAAAAAA</h1>
+        <>
+        <form onSubmit={addManga}>
+            <input type="text" 
+            placeholder="Aggiungi Manga"
+            value={newManga}
+            onChange={(e) => { setNewManga(e.target.value)}}
+            />
+        </form>
+
+        {/* Lista dei manga in pagina */}
+        <ul>
+            {manga.map((manga, i) => 
+            <li key={i}>
+                {manga}
+            </li>
+            )}
+        </ul>
+        </>
     )
 }
