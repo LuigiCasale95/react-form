@@ -36,9 +36,9 @@ export default function ListComponent() {
         {/* Lista dei manga in pagina */}
         <ul>
             {manga.map((manga, i) => 
-            <li key={i}>
-                {manga}
-                <button onClick={() => removeManga(i)}>X</button>
+            <li className="listManga" key={i}>
+                 {manga} 
+                <button className="removeBTN" onClick={() => removeManga(i)}><i class="fa-solid fa-xmark"></i></button>
             </li>
             )}
         </ul>

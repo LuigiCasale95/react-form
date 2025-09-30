@@ -3,8 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1 {
+    color: white;
+}
+main {
+    background-image: url(https://m.media-amazon.com/images/I/A1btp-E1m6L._AC_SX679_.jpg);
+    height: 100vh;
+}
 .contaier {
-    max-width: 1400px;
-    height: 100px;
+    max-width: 600px;
     margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
+.removeBTN {
+    padding: 2px;
+    margin-left: 5px;
+}
+ul {
+    margin-top: 10px;
+    background-color: rgb(186, 186, 190);
+    padding: 10px;
+}
+input {
+    padding: 10px;
+}
+.listManga {
+    padding: 10px;
+    background-color: rgb(223, 223, 223);
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
 }
