@@ -7,7 +7,7 @@ export default function MyMain() {
     <main>
 
         <div className="contaier">
-            <h1>Lista Manga</h1>
+            <h1>Lista novità settimanali sui manga</h1>
             <ListComponent></ListComponent>
         </div>
 

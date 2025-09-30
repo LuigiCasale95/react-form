@@ -2,7 +2,7 @@ import { useState } from "react"
 
 export default function ListComponent() {
 
-    const mangaList = ["Naruto", "One Piece", "Buonanotte Punpun", "BillyBat"]
+    const mangaList = ["Naruto è finito davverò così male? ASSOLUTAMENTE SI", "Uscita ultimo capitolo di One Piece prevista per 2125", "In uscita la nuova edizione di Buonanotte Punpun", "Ristampa dei volumi 1, 2, 3 di BillyBat"]
 
     const [manga, setManga] = useState(mangaList)
     const [newManga, setNewManga] = useState("")
