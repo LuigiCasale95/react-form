@@ -16,6 +16,13 @@ export default function ListComponent() {
         setNewManga("")
     }
 
+    const removeManga = i => {
+        const updateMangaList = manga.filter((manga, mangaIndex) => {
+            return mangaIndex !== i
+        })
+        setManga(updateMangaList)
+    }
+
     return (
         <>
         <form onSubmit={addManga}>
@@ -31,6 +38,7 @@ export default function ListComponent() {
             {manga.map((manga, i) => 
             <li key={i}>
                 {manga}
+                <button onClick={() => removeManga(i)}>X</button>
             </li>
             )}
         </ul>
